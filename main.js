@@ -221,6 +221,51 @@ class Categories extends React.Component {
     }
 }
 
+
+class Modal extends React.Component {
+    componentDidMount() {
+        $(this.getDOMNode())
+            .modal({backdrop: "static", keyboard: true, show: false});
+    }
+
+    componentWillUnmount() {
+        $(this.getDOMNode())
+            .off("hidden", this.handleHidden);
+    }
+
+    open() {
+        $(this.getDOMNode()).modal("show");
+    }
+
+    close() {
+        $(this.getDOMNode()).modal("hide");
+    }
+    
+    render() {
+        return (
+            <div id="scheduleentry-modal" className="modal fade" tabIndex="-1">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                            <h4 className="modal-title">{this.props.title}</h4>
+                        </div>
+                        <div className="modal-body">
+                            {this.props.children}
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-danger pull-left" data-dismiss="modal">Delete</button>
+                            <button type="button" className="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
 ReactDOM.render(
     <Videos />,
     document.getElementById('example')
