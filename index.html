@@ -1,9 +1,27 @@
 <html>
 
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link href="main.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>
+  <link href="main.less" rel="stylesheet/less" type="text/css">
+
+  <script>
+    less = {
+      env: "development",
+      logLevel: 2,
+      async: false,
+      fileAsync: false,
+      poll: 1000,
+      functions: {},
+      dumpLineNumbers: "comments",
+      relativeUrls: false,
+      globalVars: {
+        selected: '#02b4ed'
+      }
+    };
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>
 </head>
 
 <body>
@@ -16,11 +34,11 @@
           <span class="icon-bar"></span> 
           <span class="icon-bar"></span> 
           </button>
-        <a class="navbar-brand" href="/"><img src="https://developers.google.com/youtube/images/YouTube-icon-full_color.png" width="20"></a>
+        <a class="navbar-brand" href="/"><img src="https://developers.google.com/youtube/images/YouTube-icon-full_color.png" height="20"></a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <form class="navbar-form navbar-right" role="search">
-          <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-fw fa-plus-square"></i> Add</a></button>
+          <button type="submit" class="btn btn-head" data-toggle="modal" data-target="#myModal"><i class="fa fa-fw fa-plus-square"></i> Add</a></button>
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown hidden">
@@ -35,14 +53,128 @@
           </li>
         </ul>
       </div>
-    </div>
   </nav>
+
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 sidebar" id="categories"></div>
+      <div class="col-sm-3">
+        <div class="dropdown text-right">
+          <a class="btn btn-head dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <i class="fa fa-bars" aria-hidden="true"></i> Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-9">
+
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+    </div>
+    <div class="videos">
+        <div class="video">
+          <a href="#">
+            <div class="overlay">
+              <div class="stats"><i class="fa fa-heart"></i> <span class="text">2500</span></div>
+              <div class="duration"><i class="fa fa-clock-o"></i> 2:20</div>
+              <div class="play"><i class="fa fa-youtube-play"></i></div>
+            </div>
+            <img src="https://i.ytimg.com/vi/12CeaxLiMgE/mqdefault.jpg" />
+          </a>
+        </div>
+        
+        <div class="video">
+          <a href="#">
+            <div class="overlay">
+              <div class="stats"><i class="fa fa-heart"></i> <span class="text">2500</span></div>
+              <div class="duration"><i class="fa fa-clock-o"></i> 2:20</div>
+              <div class="play"><i class="fa fa-youtube-play"></i></div>
+            </div>
+            <img src="https://i.ytimg.com/vi/12CeaxLiMgE/mqdefault.jpg" />
+          </a>
+        </div>
+
+        
+        <div class="video">
+          <a href="#">
+            <div class="overlay">
+              <div class="stats"><i class="fa fa-heart"></i> <span class="text">2500</span></div>
+              <div class="duration"><i class="fa fa-clock-o"></i> 2:20</div>
+              <div class="play"><i class="fa fa-youtube-play"></i></div>
+            </div>
+            <img src="https://i.ytimg.com/vi/12CeaxLiMgE/mqdefault.jpg" />
+          </a>
+        </div>
+
+        
+        <div class="video">
+          <a href="#">
+            <div class="overlay">
+              <div class="stats"><i class="fa fa-heart"></i> <span class="text">2500</span></div>
+              <div class="duration"><i class="fa fa-clock-o"></i> 2:20</div>
+              <div class="play"><i class="fa fa-youtube-play"></i></div>
+            </div>
+            <img src="https://i.ytimg.com/vi/12CeaxLiMgE/mqdefault.jpg" />
+          </a>
+        </div>
+
+        
+        <div class="video">
+          <a href="#">
+            <div class="overlay">
+              <div class="stats"><i class="fa fa-heart"></i> <span class="text">2500</span></div>
+              <div class="duration"><i class="fa fa-clock-o"></i> 2:20</div>
+              <div class="play"><i class="fa fa-youtube-play"></i></div>
+            </div>
+            <img src="https://i.ytimg.com/vi/12CeaxLiMgE/mqdefault.jpg" />
+          </a>
+        </div>
+
+        
+        <div class="video">
+          <a href="#">
+            <div class="overlay">
+              <div class="stats"><i class="fa fa-heart"></i> <span class="text">2500</span></div>
+              <div class="duration"><i class="fa fa-clock-o"></i> 2:20</div>
+              <div class="play"><i class="fa fa-youtube-play"></i></div>
+            </div>
+            <img src="https://i.ytimg.com/vi/12CeaxLiMgE/mqdefault.jpg" />
+          </a>
+        </div>
+
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 sidebar">
+        <ul class="tags">
+          <li><a class="tag active">Trending</a></li>
+          <li><a class="tag">Recommended</a></li>
+          <li><a class="tag">New</a></li>
+        </ul>
+        <h6 class="title text-right">SELECTED</h6>
+        <div id="selected-categories"></div>
+        <h6 class="title text-right">GENRES</h6>
+        <div id="categories"></div>
+      </div>
       <div class="col-sm-9 content" id="example"></div>
     </div>
   </div>
+
+  <div id="modal"></div>
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
@@ -61,6 +193,8 @@
       </div>
     </div>
   </div>
+  
+
 
   <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>

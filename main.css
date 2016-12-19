@@ -1,4 +1,29 @@
+body {
+    /*background-color: #26262f;*/
+    font-family: 'Roboto';
+}
 nav.navbar {
     border-radius: 0px;
     border: none;
+    background-color: #16131b;
+}
+
+.btn-head {
+    border-radius: 40px;
+    background-color: transparent;
+    color: #4e4d59;
+    border-color: #4e4d59;
+    outline: none;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+.btn-head:hover {
+    background-color: #02b4ed;
+    color: #fff;
+    border-color: #02b4ed;
+}
+
+.title {
+    color: #fff;
 }
